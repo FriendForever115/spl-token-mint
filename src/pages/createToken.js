@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { Box, Typography, Button, TextField, Paper, Avatar, Stack, FormControlLabel, Checkbox } from '@mui/material';
+import {
+    Box, Typography, Button, TextField, Paper, Avatar, Stack, FormControlLabel, Checkbox
+} from '@mui/material';
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+
 
 const CreateTokenPage = () => {
     const [tokenImage, setTokenImage] = useState(null);
@@ -79,10 +82,18 @@ const CreateTokenPage = () => {
                         variant="outlined"
                         fullWidth
                         margin="normal"
+                        InputLabelProps={{
+                            style: { color: '#ffffff' }, // sets color of label to white
+                        }}
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
                                 color: "#FFFFFF",
+                            },
+                            inputProps: {
+                                '::placeholder': {
+                                    color: 'rgba(255, 255, 255, 0.5)' // Set placeholder text color to white with reduced opacity
+                                },
                             },
                         }}
                     />
@@ -91,10 +102,18 @@ const CreateTokenPage = () => {
                         variant="outlined"
                         fullWidth
                         margin="normal"
+                        InputLabelProps={{
+                            style: { color: '#ffffff' }, // sets color of label to white
+                        }}
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
                                 color: "#FFFFFF",
+                            },
+                            inputProps: {
+                                '::placeholder': {
+                                    color: 'rgba(255, 255, 255, 0.5)' // Set placeholder text color to white with reduced opacity
+                                },
                             },
                         }}
                     />
@@ -105,10 +124,18 @@ const CreateTokenPage = () => {
                         margin="normal"
                         multiline
                         rows={4}
+                        InputLabelProps={{
+                            style: { color: '#ffffff' }, // sets color of label to white
+                        }}
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
                                 color: "#FFFFFF",
+                            },
+                            inputProps: {
+                                '::placeholder': {
+                                    color: 'rgba(255, 255, 255, 0.5)' // Set placeholder text color to white with reduced opacity
+                                },
                             },
                         }}
                     />
@@ -117,9 +144,22 @@ const CreateTokenPage = () => {
                         variant="outlined"
                         fullWidth
                         margin="normal"
+                        type="number" // Set the input type to number for numeric input
+                        InputLabelProps={{
+                            style: { color: '#ffffff' }, // sets color of label to white
+                        }}
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
+                                color: "#FFFFFF",
+                            },
+                            // Style the placeholder text
+                            inputProps: {
+                                min: 0, // Optional: set minimum value
+                                step: 1, // Optional: set step increment
+                                '::placeholder': {
+                                    color: 'rgba(255, 255, 255, 0.5)' // Set placeholder text color to white with reduced opacity
+                                },
                             },
                         }}
                     />
@@ -128,9 +168,22 @@ const CreateTokenPage = () => {
                         variant="outlined"
                         fullWidth
                         margin="normal"
+                        type="number" // Set the input type to number for numeric input
+                        InputLabelProps={{
+                            style: { color: '#ffffff' }, // sets color of label to white
+                        }}
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
+                                color: "#FFFFFF",
+                            },
+                            // Style the placeholder text
+                            inputProps: {
+                                min: 0, // Optional: set minimum value
+                                max: 18, // Optional: set maximum value for decimals
+                                '::placeholder': {
+                                    color: 'rgba(255, 255, 255, 0.5)' // Set placeholder text color to white with reduced opacity
+                                },
                             },
                         }}
                     />
