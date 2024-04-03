@@ -82,6 +82,7 @@ const CreateTokenPage = () => {
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
+                                color: "#FFFFFF",
                             },
                         }}
                     />
@@ -93,6 +94,7 @@ const CreateTokenPage = () => {
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
+                                color: "#FFFFFF",
                             },
                         }}
                     />
@@ -106,6 +108,7 @@ const CreateTokenPage = () => {
                         InputProps={{
                             style: {
                                 backgroundColor: '#161616',
+                                color: "#FFFFFF",
                             },
                         }}
                     />
